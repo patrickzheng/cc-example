@@ -11,7 +11,6 @@ def words_tweeted(inputFilename, outputFilename):
                     wordDict[word] = wordDict[word] + 1
     f = open(outputFilename,'w')
     for key in sorted(wordDict.keys()):
-        #print key + ' ' + str(wordDict[key])
         f.write(key + ' ' + str(wordDict[key]) + '\n')
     f.close()
 inputFilename = sys.argv[1]
